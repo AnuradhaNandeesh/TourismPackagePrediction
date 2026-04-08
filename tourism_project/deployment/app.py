@@ -4,10 +4,10 @@ from huggingface_hub import hf_hub_download
 import joblib
 
 # Download and load the model
-model_path = hf_hub_download(repo_id="AnuradhaNandeesh/tourism-package-prediction", filename="best_machine_failure_model_v1.joblib")
+model_path = hf_hub_download(repo_id="AnuradhaNandeesh/tourism-package-prediction", filename="best_tourism_package_prediction_model_v1.joblib")
 model = joblib.load(model_path)
 
-# Streamlit UI for Machine Failure Prediction
+# Streamlit UI for Tourism Package Prediction
 st.title("Tourism Package Prediction App")
 st.write("""
 This application predicts the likelihood of a Tourism Package prediction based on its operational parameters.
