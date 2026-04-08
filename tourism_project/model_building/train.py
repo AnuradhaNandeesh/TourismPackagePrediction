@@ -95,7 +95,7 @@ print("\nTest Classification Report:")
 print(classification_report(ytest, y_pred_test))
 
 # Save best model
-joblib.dump(best_model, "best_machine_failure_model_v1.joblib")
+joblib.dump(best_model, "best_tourism_package_prediction_model_v1.joblib")
 
 # Upload to Hugging Face
 repo_id = "AnuradhaNandeesh/tourism-package-prediction"
