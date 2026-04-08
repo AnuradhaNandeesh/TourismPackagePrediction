@@ -15,22 +15,22 @@ Please enter the  customer data below to get a prediction.
 """)
 
 # User input
-Age = st.number_input("Age ", min_value=1, max_value=150, step=1.0)
+Age = st.number_input("Age ", min_value=1, max_value=150, step=1)
 TypeofContact =  st.selectbox("Type of Contact ", ["Self Enquiry", "Company Invited"])
 CityTier = st.selectbox("City Tier ", [1,2,3])
-DurationOfPitch = st.number_input("Duration Of Pitch", min_value=1, max_value=50, step=1.0)
+DurationOfPitch = st.number_input("Duration Of Pitch", min_value=1, max_value=50, step=1)
 Occupation = st.selectbox("Occupation", ["Salaried", "Free Lancer", "Small Business"])
 Gender =  st.selectbox("Gender", ["Male", "Female"])
-NumberOfPersonVisiting = st.number_input("Nuumber of Persons visting", min_value=1, max_value=10, step=1.0)
-NumberOfFollowups = st.number_input("Number of Follow ups", min_value=1, max_value=10, step=1.0)
+NumberOfPersonVisiting = st.number_input("Nuumber of Persons visting", min_value=1, max_value=10, step=1)
+NumberOfFollowups = st.number_input("Number of Follow ups", min_value=1, max_value=10, step=1)
 ProductPitched = st.selectbox("Product Pitched", ["Deluxe", "Basic", "Standard"])
-PreferredPropertyStar = st.number_input("Preferred Property Star", min_value=3, max_value=5, step=1.0)
+PreferredPropertyStar = st.number_input("Preferred Property Star", min_value=3, max_value=5, step=1)
 MaritalStatus = st.select_box("Marital Status", ["Single", "Divorced", "Married","Unmarried"])
-NumberOfTrips = st.number_input("Number of Trips", min_value=0, max_value=10, step=1.0),
+NumberOfTrips = st.number_input("Number of Trips", min_value=0, max_value=10, step=1),
 Passport = st.select_box("Passport", [1,0])
-PitchSatisfactionScore = st.number_input("PitchSatisfactionScore", min_value=1, max_value=5, step=1.0)
+PitchSatisfactionScore = st.number_input("PitchSatisfactionScore", min_value=1, max_value=5, step=1)
 OwnCar = st.number_input("OwnCar", [1,0])
-NumberOfChildrenVisiting = st.number_input("NumberOfChildrenVisiting", min_value=0, max_value=10, step=1.0)
+NumberOfChildrenVisiting = st.number_input("NumberOfChildrenVisiting", min_value=0, max_value=10, step=1)
 Designation = st.select_input("Designation", ["Manager", "Executive", "Senior Manager", "AVP", "VP"])
 MonthlyIncome = st.number_input("MonthlyIncome", min_value=1000, max_value=1000000)
 
