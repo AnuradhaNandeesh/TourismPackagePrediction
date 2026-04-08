@@ -29,17 +29,16 @@ MaritalStatus = st.selectbox("Marital Status", ["Single", "Divorced", "Married",
 NumberOfTrips = st.number_input("Number of Trips", min_value=0, max_value=10, step=1),
 Passport = st.selectbox("Passport", [1,0])
 PitchSatisfactionScore = st.number_input("PitchSatisfactionScore", min_value=1, max_value=5, step=1)
-OwnCar = st.number_input("OwnCar", [1,0])
+OwnCar = st.selectbox("OwnCar", [1,0])
 NumberOfChildrenVisiting = st.number_input("NumberOfChildrenVisiting", min_value=0, max_value=10, step=1)
-Designation = st.select_input("Designation", ["Manager", "Executive", "Senior Manager", "AVP", "VP"])
+Designation = st.selectbox("Designation", ["Manager", "Executive", "Senior Manager", "AVP", "VP"])
 MonthlyIncome = st.number_input("MonthlyIncome", min_value=1000, max_value=1000000)
-
 
 # Assemble input into DataFrame
 input_data = pd.DataFrame([{
     'Age': Age,
-    'Type of Contact': TypeofContact,
-    'City Tier': CityTier,
+    'TypeofContact': TypeofContact,
+    'CityTier': CityTier,
     'DurationOfPitch': DurationOfPitch,
     'Occupation': Occupation,
     'Gender': Gender,
@@ -55,7 +54,6 @@ input_data = pd.DataFrame([{
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
     'Designation': Designation
 }])
-
 
 if st.button("Tourism Package Prediction"):
     prediction = model.predict(input_data)[0]
