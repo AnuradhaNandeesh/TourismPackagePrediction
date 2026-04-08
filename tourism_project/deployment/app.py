@@ -51,8 +51,8 @@ input_data = pd.DataFrame([{
     'NumberOfTrips': NumberOfTrips,
     'Passport': Passport,
     'PitchSatisfactionScore': PitchSatisfactionScore,
-    'OwnCar': OwnCar
-    'NumberOfChildrenVisiting': NumberOfChildrenVisiting
+    'OwnCar': OwnCar,
+    'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
     'Designation': Designation
 }])
 
