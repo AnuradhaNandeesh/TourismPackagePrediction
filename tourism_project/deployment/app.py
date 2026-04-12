@@ -26,7 +26,7 @@ NumberOfFollowups = st.number_input("Number of Follow ups", min_value=1, max_val
 ProductPitched = st.selectbox("Product Pitched", ["Deluxe", "Basic", "Standard"])
 PreferredPropertyStar = st.number_input("Preferred Property Star", min_value=3, max_value=5, step=1)
 MaritalStatus = st.selectbox("Marital Status", ["Single", "Divorced", "Married","Unmarried"])
-NumberOfTrips = st.number_input("Number of Trips", min_value=0, max_value=10, step=1),
+NumberOfTrips = st.number_input("Number of Trips", min_value=0, max_value=10, step=1)
 Passport = st.selectbox("Passport", [1,0])
 PitchSatisfactionScore = st.number_input("PitchSatisfactionScore", min_value=1, max_value=5, step=1)
 OwnCar = st.selectbox("OwnCar", [1,0])
@@ -54,6 +54,7 @@ input_data = pd.DataFrame([{
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
     'Designation': Designation,
     'MonthlyIncome': MonthlyIncome
+}])
 
 if st.button("Tourism Package Prediction"):
     prediction = model.predict(input_data)[0]
