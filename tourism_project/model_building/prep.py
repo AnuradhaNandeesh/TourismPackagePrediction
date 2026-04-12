@@ -19,10 +19,6 @@ print("Dataset loaded successfully.")
 # Drop the unique identifier
 df.drop(columns=['CustomerID'], inplace=True)
 
-# Encoding the categorical 'TypeofContact' column
-label_encoder = LabelEncoder()
-df['TypeofContact'] = label_encoder.fit_transform(df['TypeofContact'])
-
 target_col = 'ProdTaken'
 
 # Split into X (features) and y (target)
