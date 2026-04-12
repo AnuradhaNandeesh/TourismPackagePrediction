@@ -52,8 +52,8 @@ input_data = pd.DataFrame([{
     'PitchSatisfactionScore': PitchSatisfactionScore,
     'OwnCar': OwnCar,
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
-    'Designation': Designation
-}])
+    'Designation': Designation,
+    'MonthlyIncome": MonthlyIncome
 
 if st.button("Tourism Package Prediction"):
     prediction = model.predict(input_data)[0]
